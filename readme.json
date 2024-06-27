@@ -1,0 +1,16 @@
+{
+  "install-package": "yarn",
+  "env":{
+    "ref": "https://docs.ton.org/develop/smart-contracts/environment/installation#prerequisites",
+    "cmd": [
+      "download fiftlib from https://docs.ton.org/assets/files/fiftlib-bde8bdfe1099832be726bd8e0e583bfe.zip",
+      "unzip",
+      "copy it to /usr/local/lib/fiftlib"
+    ]
+  },
+  "build": [
+    "cd ft",
+    "set env variable: export FIFTPATH=/usr/local/lib/fiftlib",
+    "./compile.sh"
+  ]
+}
